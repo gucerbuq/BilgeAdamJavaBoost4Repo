@@ -24,12 +24,17 @@ public class ATM {
 			System.out.println("Enter your password : ");
 			int pass1 = sc.nextInt();
 			
-			if(pass1==password1) {
+			if (pass1 != password1) {
+				for (int count = 0 ; count < 2 ; count++) {
+					System.out.println("Wrong Password");
+					System.out.println("Try again : ");
+					pass1 = sc.nextInt();
+				}
+			} else {
 				System.out.println("Login succesful!");
 				menu();
-			}else {
-				System.out.println("Wrong Password");
 			}
+			
 		}else {
 			System.out.println("Wrong username");
 		}
