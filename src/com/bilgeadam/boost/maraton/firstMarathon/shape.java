@@ -27,12 +27,12 @@ public class shape {
 	
 			} else if (firstEdge < -1 ) {
 				
-				System.out.println("Lütfen pozitif bir değer giriniz!");
+				System.err.println("Lütfen pozitif bir değer giriniz!");
 				return inputs();
 				
 			} else if (firstEdge == 0) {
 				
-				System.out.println("En az üç kenar giriniz.");
+				System.err.println("En az üç kenar giriniz.");
 				return inputs();
 				
 			}
